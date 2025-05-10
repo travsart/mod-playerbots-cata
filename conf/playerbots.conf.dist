@@ -513,7 +513,7 @@ AiPlayerbot.RandomBotRandomPassword = 0
 AiPlayerbot.RandomBotAccountPrefix = "rndbot"
 
 AiPlayerbot.RandomBotMinLevel = 1
-AiPlayerbot.RandomBotMaxLevel = 80
+AiPlayerbot.RandomBotMaxLevel = 85
 
 # Sync max random bot level with max level of online players
 # Default: 0 (disabled)
