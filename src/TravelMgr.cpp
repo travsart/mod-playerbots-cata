@@ -3806,7 +3806,7 @@ std::vector<WorldPosition*> TravelMgr::getNextPoint(WorldPosition* center, std::
                    [center](WorldPosition* point)
                    { return static_cast<uint32>(200000.f / (1.f + point->distance(center))); });
 
-    Acore::Containers::RandomShuffle(retVec);
+    firelands::Containers::RandomShuffle(retVec);
 
     std::vector<float> dists;
 

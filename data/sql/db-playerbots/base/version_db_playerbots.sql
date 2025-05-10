@@ -12,7 +12,7 @@
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
--- Дамп структуры для таблица _acore_playerbots.version_db_playerbots
+-- Дамп структуры для таблица _firelands_playerbots.version_db_playerbots
 DROP TABLE IF EXISTS `version_db_playerbots`;
 CREATE TABLE IF NOT EXISTS `version_db_playerbots` (
   `sql_rev` varchar(100) NOT NULL,

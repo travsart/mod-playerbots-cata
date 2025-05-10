@@ -2189,7 +2189,7 @@ bool PlayerbotAI::IsAssistTankOfIndex(Player* player, int index)
     return false;
 }
 
-namespace acore
+namespace firelands
 {
 class UnitByGuidInRangeCheck
 {
@@ -2228,7 +2228,7 @@ private:
     float i_range;
     ObjectGuid i_guid;
 };
-};  // namespace acore
+};  // namespace firelands
 
 Unit* PlayerbotAI::GetUnit(ObjectGuid guid)
 {

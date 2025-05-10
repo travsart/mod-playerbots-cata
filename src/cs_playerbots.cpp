@@ -21,7 +21,7 @@
 #include "RandomPlayerbotMgr.h"
 #include "ScriptMgr.h"
 
-using namespace Acore::ChatCommands;
+using namespace firelands::ChatCommands;
 
 class playerbots_commandscript : public CommandScript
 {

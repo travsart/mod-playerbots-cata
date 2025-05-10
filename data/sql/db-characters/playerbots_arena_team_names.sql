@@ -254,7 +254,7 @@ INSERT INTO `playerbots_arena_team_names` (`name_id`,`name`, `type`) VALUES
 (NULL, 'Flex',5),
 (NULL, 'Boondock Pandas',5),
 (NULL, 'Perfect',5),
-(NULL, 'Dracorex',5),
+(NULL, 'Drfirelandsx',5),
 (NULL, 'Annihilation',5),
 (NULL, 'Arcanum',5),
 (NULL, 'Fatalis',5),

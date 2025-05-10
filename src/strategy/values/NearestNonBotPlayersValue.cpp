@@ -12,8 +12,8 @@
 
 void NearestNonBotPlayersValue::FindUnits(std::list<Unit*>& targets)
 {
-    Acore::AnyUnitInObjectRangeCheck u_check(bot, range);
-    Acore::UnitListSearcher<Acore::AnyUnitInObjectRangeCheck> searcher(bot, targets, u_check);
+    firelands::AnyUnitInObjectRangeCheck u_check(bot, range);
+    firelands::UnitListSearcher<firelands::AnyUnitInObjectRangeCheck> searcher(bot, targets, u_check);
     Cell::VisitAllObjects(bot, searcher, range);
 }
 

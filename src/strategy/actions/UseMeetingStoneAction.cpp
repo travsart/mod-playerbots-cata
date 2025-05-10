@@ -109,7 +109,7 @@ bool SummonAction::SummonUsingGos(Player* summoner, Player* player)
 {
     std::list<GameObject*> targets;
     AnyGameObjectInObjectRangeCheck u_check(summoner, sPlayerbotAIConfig->sightDistance);
-    Acore::GameObjectListSearcher<AnyGameObjectInObjectRangeCheck> searcher(summoner, targets, u_check);
+    firelands::GameObjectListSearcher<AnyGameObjectInObjectRangeCheck> searcher(summoner, targets, u_check);
     Cell::VisitAllObjects(summoner, searcher, sPlayerbotAIConfig->sightDistance);
 
     for (GameObject* go : targets)
@@ -128,8 +128,8 @@ bool SummonAction::SummonUsingNpcs(Player* summoner, Player* player)
         return false;
 
     std::list<Unit*> targets;
-    Acore::AnyUnitInObjectRangeCheck u_check(summoner, sPlayerbotAIConfig->sightDistance);
-    Acore::UnitListSearcher<Acore::AnyUnitInObjectRangeCheck> searcher(summoner, targets, u_check);
+    firelands::AnyUnitInObjectRangeCheck u_check(summoner, sPlayerbotAIConfig->sightDistance);
+    firelands::UnitListSearcher<firelands::AnyUnitInObjectRangeCheck> searcher(summoner, targets, u_check);
     Cell::VisitAllObjects(summoner, searcher, sPlayerbotAIConfig->sightDistance);
 
     for (Unit* unit : targets)

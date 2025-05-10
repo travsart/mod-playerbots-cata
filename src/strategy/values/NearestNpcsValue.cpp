@@ -13,8 +13,8 @@
 
 void NearestNpcsValue::FindUnits(std::list<Unit*>& targets)
 {
-    Acore::AnyUnitInObjectRangeCheck u_check(bot, range);
-    Acore::UnitListSearcher<Acore::AnyUnitInObjectRangeCheck> searcher(bot, targets, u_check);
+    firelands::AnyUnitInObjectRangeCheck u_check(bot, range);
+    firelands::UnitListSearcher<firelands::AnyUnitInObjectRangeCheck> searcher(bot, targets, u_check);
     Cell::VisitAllObjects(bot, searcher, range);
 }
 
@@ -22,8 +22,8 @@ bool NearestNpcsValue::AcceptUnit(Unit* unit) { return !unit->IsHostileTo(bot) &
 
 void NearestHostileNpcsValue::FindUnits(std::list<Unit*>& targets)
 {
-    Acore::AnyUnitInObjectRangeCheck u_check(bot, range);
-    Acore::UnitListSearcher<Acore::AnyUnitInObjectRangeCheck> searcher(bot, targets, u_check);
+    firelands::AnyUnitInObjectRangeCheck u_check(bot, range);
+    firelands::UnitListSearcher<firelands::AnyUnitInObjectRangeCheck> searcher(bot, targets, u_check);
     Cell::VisitAllObjects(bot, searcher, range);
 }
 
@@ -31,8 +31,8 @@ bool NearestHostileNpcsValue::AcceptUnit(Unit* unit) { return unit->IsHostileTo(
 
 void NearestVehiclesValue::FindUnits(std::list<Unit*>& targets)
 {
-    Acore::AnyUnitInObjectRangeCheck u_check(bot, range);
-    Acore::UnitListSearcher<Acore::AnyUnitInObjectRangeCheck> searcher(bot, targets, u_check);
+    firelands::AnyUnitInObjectRangeCheck u_check(bot, range);
+    firelands::UnitListSearcher<firelands::AnyUnitInObjectRangeCheck> searcher(bot, targets, u_check);
     Cell::VisitAllObjects(bot, searcher, range);
 }
 
@@ -50,8 +50,8 @@ bool NearestVehiclesValue::AcceptUnit(Unit* unit)
 
 void NearestTriggersValue::FindUnits(std::list<Unit*>& targets)
 {
-    Acore::AnyUnfriendlyUnitInObjectRangeCheck u_check(bot, bot, range);
-    Acore::UnitListSearcher<Acore::AnyUnfriendlyUnitInObjectRangeCheck> searcher(bot, targets, u_check);
+    firelands::AnyUnfriendlyUnitInObjectRangeCheck u_check(bot, bot, range);
+    firelands::UnitListSearcher<firelands::AnyUnfriendlyUnitInObjectRangeCheck> searcher(bot, targets, u_check);
     Cell::VisitAllObjects(bot, searcher, range);
 }
 
@@ -59,8 +59,8 @@ bool NearestTriggersValue::AcceptUnit(Unit* unit) { return !unit->IsPlayer(); }
 
 void NearestTotemsValue::FindUnits(std::list<Unit*>& targets)
 {
-    Acore::AnyUnitInObjectRangeCheck u_check(bot, range);
-    Acore::UnitListSearcher<Acore::AnyUnitInObjectRangeCheck> searcher(bot, targets, u_check);
+    firelands::AnyUnitInObjectRangeCheck u_check(bot, range);
+    firelands::UnitListSearcher<firelands::AnyUnitInObjectRangeCheck> searcher(bot, targets, u_check);
     Cell::VisitAllObjects(bot, searcher, range);
 }
 

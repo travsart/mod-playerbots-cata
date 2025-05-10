@@ -19,8 +19,8 @@
 
 void PossibleTargetsValue::FindUnits(std::list<Unit*>& targets)
 {
-    Acore::AnyUnfriendlyUnitInObjectRangeCheck u_check(bot, bot, range);
-    Acore::UnitListSearcher<Acore::AnyUnfriendlyUnitInObjectRangeCheck> searcher(bot, targets, u_check);
+    firelands::AnyUnfriendlyUnitInObjectRangeCheck u_check(bot, bot, range);
+    firelands::UnitListSearcher<firelands::AnyUnfriendlyUnitInObjectRangeCheck> searcher(bot, targets, u_check);
     Cell::VisitAllObjects(bot, searcher, range);
 }
 
@@ -28,8 +28,8 @@ bool PossibleTargetsValue::AcceptUnit(Unit* unit) { return AttackersValue::IsPos
 
 void PossibleTriggersValue::FindUnits(std::list<Unit*>& targets)
 {
-    Acore::AnyUnfriendlyUnitInObjectRangeCheck u_check(bot, bot, range);
-    Acore::UnitListSearcher<Acore::AnyUnfriendlyUnitInObjectRangeCheck> searcher(bot, targets, u_check);
+    firelands::AnyUnfriendlyUnitInObjectRangeCheck u_check(bot, bot, range);
+    firelands::UnitListSearcher<firelands::AnyUnfriendlyUnitInObjectRangeCheck> searcher(bot, targets, u_check);
     Cell::VisitAllObjects(bot, searcher, range);
 }
 
